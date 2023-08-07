@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.page-overview-item {
+  border-bottom: 1px solid $gray;
+  color: $white;
+  font-weight: $regular;
+  font-size: rem(13);
+  line-height: 1.846;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: 1.5;
+    letter-spacing: .0625em;
+  }
+}
+
+.page-overview-item:not(:first-of-type) {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin-top: rem(30);
+  }
+}
+
+.page-overview-item__title {
+  width: 65%;
+  @include mq("md") {
+    width: 80%;
+  }
+}
+
+.page-overview-item__title.page-overview-item {
+  padding-bottom: rem(19);
+  @include mq("md") {
+    padding-bottom: rem(28);
+  }
+}

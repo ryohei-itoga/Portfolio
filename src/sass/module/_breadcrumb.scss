@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+}
+
+.breadcrumb li:after {
+  content: '>';
+  padding: 0 0.2em;
+  color: $white;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: $white;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}

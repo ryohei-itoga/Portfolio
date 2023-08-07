@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.page-thanks {
+  flex: 1;
+}
+
+.page-thanks__sub-title.sub-title {
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(30);
+    letter-spacing: 0.066em;
+    line-height: 1.166;
+  }
+}
+
+.page-thanks__text.text {
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  line-height: 1.45;
+  text-align: center;
+  margin-top: rem(80);
+  @include mq("md") {
+    font-size: rem(30);
+    letter-spacing: 0.066em;
+    line-height: 1.166;
+  }
+}
+
+.page-thanks__button {
+  margin-top: rem(80);
+  text-align: center;
+}

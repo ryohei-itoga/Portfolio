@@ -1,0 +1,122 @@
+@use "global" as *;
+
+.page-works-detail__title.title__main {
+  text-align: left;
+  @include mq("md") {
+    font-size: rem(23);
+    letter-spacing: 0.0173em;
+    line-height: 1.521;
+  }
+}
+
+.page-works-detail__inner.inner {
+  @include mq("md") {
+    max-width: rem(850);
+  }
+}
+
+.page-works-detail__content {
+  margin-top: rem(16);
+  color: $white;
+  @include mq("md") {
+    display: flex;
+    margin-top: rem(32);
+    margin-left: auto;
+  }
+}
+
+.page-works-detail__info {
+  @include mq("md") {
+    margin-top: rem(2);
+  }
+}
+
+.page-works-detail__date,
+.page-works-detail__category {
+  display: inline-block;
+}
+
+.page-works-detail__date {
+  font-size: rem(16);
+}
+
+.page-works-detail__category {
+  margin-left: rem(28);
+  padding: rem(7.5) rem(20.7);
+  border: 1px solid $white;
+  font-size: rem(14);
+  line-height: 1;
+  @include mq("md") {
+    margin-left: rem(45);
+  }
+}
+
+.page-works-detail__items {
+  margin-top: rem(54);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.page-works-detail__item {
+  position: relative;
+  padding: rem(56) rem(10) rem(33);
+  border: 1px solid $white;
+  @include mq("md") {
+    padding: rem(44) rem(22) rem(32);
+  }
+}
+
+.page-works-detail__item:not(:first-child) {
+  margin-top: rem(54);
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.page-works-detail__sub-title.sub-title {
+  position: absolute;
+  top: rem(-24);
+  left: rem(24);
+  padding: rem(8) rem(24);
+  border: 1px solid $white;
+  border-radius: rem(34);
+  background-color: $black;
+  color: $white;
+  line-height: 1.45;
+  letter-spacing: .02em;
+  @include mq("md") {
+    font-size: rem(20);
+  }
+}
+
+.page-works-detail__text.text {
+  line-height: 2.1875;
+  letter-spacing: .025em;
+}
+
+.page-works-detail__articles {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+
+.page-works-detail__articles-title {
+  padding: rem(8) 0;
+  border: 1px solid $white;
+  color: $white;
+  text-align: center;
+  letter-spacing: 0.125em;
+}
+
+.page-works-detail__cards {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(80);
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+.page-works-detail__cards .card:first-of-type::after {
+  content: none;
+}

@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.page-top-button {
+  position: fixed;
+  right: rem(21);
+  bottom: rem(41);
+  z-index: 10;
+  width: rem(45);
+  height: rem(45);
+  background-image: url(../images/common/arrow-up.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: $white;
+  transition: background-color .3s;
+  @include mq("md") {
+    right: rem(31);
+    bottom: rem(32);
+  }
+}
+
+.page-top-button:hover {
+  background-image: url(../images/common/arrow-up-white.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: $black2;
+  cursor: pointer;
+}

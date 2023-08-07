@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name=”robots” content=”noindex”>
+  <!-- meta情報 -->
+  <title>CodeUps</title>
+  <meta name="description" content="このサイトはCodeUpsの課題です" />
+  <meta name="keywords" content="CodeUps," />
+  <!-- ogp -->
+  <meta property="og:title" content="CodeUps" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hogehoge.com/" />
+  <meta property="og:image" content="https://hogehoge.com/image/ogp-img.jpg" />
+  <meta property="og:site_name" content="CodeUps" />
+  <meta property="og:description" content="このサイトはCodeUpsの課題です" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="#" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap"
+    rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header headerColorScroll js-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="/index.html" class="header__link">
+          <img src="./images/common/logo.svg" alt="ヘッダーロゴ" />
+        </a>
+      </h1>
+      <nav class="header__nav md-show">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="news.html"><span>お知らせ</span></a>
+          </li>
+          <li class="header__item">
+            <a href="content.html"><span>事業内容</span></a>
+          </li>
+          <li class="header__item">
+            <a href="works.html"><span>制作実績</span></a>
+          </li>
+          <li class="header__item">
+            <a href="overview.html"><span>企業概要</span></a>
+          </li>
+          <li class="header__item">
+            <a href="blog.html"><span>ブログ</span></a>
+          </li>
+          <li class="header__item header__item--white">
+            <a href="contact.html"><span>お問い合わせ</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__hamburger hamburger md-none js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header__drawer-menu drawer-menu js-drawer">
+      <ul class="drawer-menu__items">
+        <li class="drawer-menu__item">
+          <a href="/index.html">トップ</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="news.html">お知らせ</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="content.html">事業内容</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="works.html">制作実績</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="overview.html">企業概要</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="blog.html">ブログ</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="contact.html">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="mv-sub mv-sub--content">
+      <div class="mv-sub__inner">
+        <div class="mv-sub__wrapper">
+          <h2 class="mv-sub__title">事業内容</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content breadcrumb top-sub">
+      <div class="page-content__contents inner">
+        <ol class="page-content__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/">
+              <span itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/news.html">
+              <span itemprop="name">事業内容</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="page-content top-page-content" id="content">
+      <div class="page-content__contents">
+        <div class="page-content__box inner">
+          <div class="page-content__heading">
+            <h3 class="page-content__sub-title page-content__sub-title--center sub-title">企業理念</h3>
+            <p class="page-content__text page-content__text--center text">説明が入ります。説明が入ります。説明が入ります。説明が入ります。<br>説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
+          </div>
+        </div>
+        <div class="page-content__items">
+          <div class="page-content__inner inner">
+            <div class="page-content__content">
+              <div class="page-content__wrapper">
+                <picture>
+                  <source srcset="./images/content/content_01.jpg" media="(min-width: 1024px)" />
+                  <img src="./images/content/content_01-sp.jpg" alt="男女3人が談笑している様子" />
+                </picture>
+              </div>
+              <div class="page-content__body">
+                <h3 class="page-content__sub-title sub-title">企業理念1</h3>
+                <p class="page-content__text text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="page-content__content page-content__content--reverse">
+              <div class="page-content__wrapper">
+                <picture>
+                  <source srcset="./images/content/content_02.jpg" media="(min-width: 1024px)" />
+                  <img src="./images/content/content_02-sp.jpg" alt="数字とグラフ" />
+                </picture>
+              </div>
+              <div class="page-content__body page-content__body--reverse">
+                <h3 class="page-content__sub-title sub-title">企業理念2</h3>
+                <p class="page-content__text text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="page-content__content">
+              <div class="page-content__wrapper">
+                <picture>
+                  <source srcset="./images/content/content_03.jpg" media="(min-width: 1024px)" />
+                  <img src="./images/content/content_03-sp.jpg" alt="PCとスマホと株価" />
+                </picture>
+              </div>
+              <div class="page-content__body">
+                <h3 class="page-content__sub-title sub-title">企業理念3</h3>
+                <p class="page-content__text text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact top-contact" id="contact">
+      <div class="contact__title title inner">
+        <div class="contact__heading">
+          <h2 class="title__main">お問い合わせ</h2>
+          <p class="title__sub title__sub--contact">Contact</p>
+        </div>
+        <p class="contact__text text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <div class="contact__button">
+          <a href="#" class="button">お問い合わせへ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <h1 class="footer__logo">
+        <a href="#" class="footer__logo-link">
+          <img src="./images/common/logo.svg" alt="フッターロゴ" />
+        </a>
+      </h1>
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item md-none">
+            <a href="/index.html"><span>トップ</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="news.html"><span>お知らせ</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="content.html"><span>事業内容</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="works.html"><span>制作実績</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="overview.html"><span>企業概要</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="blog.html"><span>ブログ</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="contact.html"><span>お問い合わせ</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <small class="footer__text">&copy;&nbsp;2021&nbsp;CodeUps&nbsp;Inc.</small>
+  </footer>
+
+  <span class="dli-arrow-up"></span>
+  <div class="page-top-button js-page-top"></div>
+</body>
+
+</html>

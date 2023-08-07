@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.page-works__items {
+  margin-top: rem(80);
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(40);
+    column-gap: rem(48);
+    row-gap: rem(114);
+  }
+}
+
+.page-works__inner.inner {
+  padding-right: 0;
+  padding-left: 0;
+  @include mq("md") {
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.page-works__item {
+  @include mq("md") {
+    width: calc(50% - 1.5rem);
+  }
+}
+
+.page-works__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.page-works__wrapper::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: rem(128);
+  padding: rem(8) 0;
+  background-color: $black;
+  color: $white;
+  font-size: rem(16);
+  text-align: center;
+  content: "カテゴリ1";
+}
+
+.page-works__wrapper picture {
+  width: 100%;
+  max-width: rem(375);
+  @include mq("md") {
+    max-width: rem(525);
+  }
+}
+
+.page-works__body {
+  padding: rem(24) 0 rem(28);
+  @include mq("md") {
+    padding: rem(12) 0 0 0;
+  }
+}
+
+.page-works__item:last-of-type .page-works__body {
+  padding: rem(24) 0 0 0;
+}
+
+.page-works__sub-title.sub-title {
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(20);
+  }
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.category-info__items {
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: rem(16);
+  column-gap: rem(24);
+}
+
+.category-info__item--white {
+  background-color: $white;
+  color: $black2;
+  padding: rem(3) rem(10.5);
+}

@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: rem(50);
+  background: rgba(17,17,17,.5);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin-right: auto;
+}
+
+.header__logo img {
+  z-index: 9999;
+  width: rem(70);
+  @include mq("md") {
+    width: rem(94);
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 rem(23);
+  @include mq("md") {
+    padding: 0 0 0 rem(33);
+  }
+}
+
+.header__nav {
+  height: inherit;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__item {
+  height: inherit;
+}
+
+.header__item a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 rem(15);
+  color: $white;
+  font-size: rem(16);
+  letter-spacing: .125em;
+}
+
+.header__item a:hover {
+  opacity: 1;
+}
+
+.header__item span {
+  position: relative;
+}
+
+.header__item:not(.header__item--white) span::after {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: rem(-3);
+  left: 0;
+  width: 100%;
+  height: rem(1);
+  background-color: $yellow;
+  content: "";
+}
+
+.header__item:not(.header__item--white) span:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+
+.header__item.header__item--white {
+  margin-left: rem(14);
+}
+
+.header__item.header__item--white a {
+  padding: 0 rem(32);
+  background-color: $white;
+  color: $black2;
+}
+
+.header__item.header__item--white a:hover {
+  background-color: $black2;
+  color: $white;
+  transition: .3s;
+}
+
+.header.headerColorScroll {
+  background-color: $black;
+  transition: background-color .3s;
+}

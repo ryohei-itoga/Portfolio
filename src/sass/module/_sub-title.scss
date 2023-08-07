@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.sub-title {
+  color: $white;
+  font-weight: $regular;
+  font-size: rem(20);
+  letter-spacing: .1em;
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(25);
+    text-align: left;
+    line-height: 1;
+    letter-spacing: .02em;
+  }
+}

@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.page-overview__body {
+  margin-top: rem(85);
+}
+
+.page-overview__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-overview__item.page-overview-item {
+  width: 35%;
+  border-bottom: 1px solid $gray;
+  @include mq("md") {
+    width: 20%;
+  }
+}
+
+/* Google Mapを囲う要素 */
+.page-overview__map {
+  position: relative;
+  width: 100vw;
+  height: 0;
+  margin-top: rem(120);
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-top: 80%;
+  @include mq("md") {
+    width: 100%;
+    margin-top: rem(80);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 33.637%;
+  }
+}
+
+/* Google Mapのiframe */
+.page-overview__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

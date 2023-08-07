@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name=”robots” content=”noindex”>
+  <!-- meta情報 -->
+  <title>CodeUps</title>
+  <meta name="description" content="このサイトはCodeUpsの課題です" />
+  <meta name="keywords" content="CodeUps," />
+  <!-- ogp -->
+  <meta property="og:title" content="CodeUps" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hogehoge.com/" />
+  <meta property="og:image" content="https://hogehoge.com/image/ogp-img.jpg" />
+  <meta property="og:site_name" content="CodeUps" />
+  <meta property="og:description" content="このサイトはCodeUpsの課題です" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="#" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap"
+    rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header headerColorScroll js-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="/index.html" class="header__link">
+          <img src="./images/common/logo.svg" alt="ヘッダーロゴ" />
+        </a>
+      </h1>
+      <nav class="header__nav md-show">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="news.html"><span>お知らせ</span></a>
+          </li>
+          <li class="header__item">
+            <a href="content.html"><span>事業内容</span></a>
+          </li>
+          <li class="header__item">
+            <a href="works.html"><span>制作実績</span></a>
+          </li>
+          <li class="header__item">
+            <a href="overview.html"><span>企業概要</span></a>
+          </li>
+          <li class="header__item">
+            <a href="blog.html"><span>ブログ</span></a>
+          </li>
+          <li class="header__item header__item--white">
+            <a href="contact.html"><span>お問い合わせ</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__hamburger hamburger md-none js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header__drawer-menu drawer-menu js-drawer">
+      <ul class="drawer-menu__items">
+        <li class="drawer-menu__item">
+          <a href="/index.html">トップ</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="news.html">お知らせ</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="content.html">事業内容</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="works.html">制作実績</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="overview.html">企業概要</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="blog.html">ブログ</a>
+        </li>
+        <li class="drawer-menu__item">
+          <a href="contact.html">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-works-detail breadcrumb top-page-works-detail-breadcrumb">
+      <div class="page-works-detail__contents inner">
+        <ol class="page-works-detail__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/">
+              <span itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/works.html">
+              <span itemprop="name">制作実績</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/works_detail.html">
+              <span itemprop="name">制作実績詳細</span>
+            </a>
+            <meta itemprop="position" content="3" />
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="page-works-detail top-page-works-detail">
+      <div class="page-works-detail__inner title inner">
+        <h2 class="page-works-detail__title title__main">〇〇株式会社 制作実績</h2>
+        <div class="page-works-detail__content">
+          <div class="page-works-detail__info">
+            <time class="page-works-detail__date" datetime="2020-06-13">2020/06/13</time>
+            <span class="page-works-detail__category">カテゴリ1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery top-gallery">
+        <div class="swiper-container gallery-slider">
+          <div class="swiper-wrapper">
+            <div class="gallery-slider__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample010.jpg" alt="">
+            </div>
+            <div class="gallery-slider__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample005.jpg" alt="">
+            </div>
+            <div class="gallery-slider__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample012.jpg" alt="">
+            </div>
+            <div class="gallery-slider__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample007.jpg" alt="">
+            </div>
+            <div class="gallery-slider__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample008.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="swiper-container gallery-thumbs top-gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="gallery-thumbs__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample010.jpg" alt="">
+            </div>
+            <div class="gallery-thumbs__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample005.jpg" alt="">
+            </div>
+            <div class="gallery-thumbs__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample012.jpg" alt="">
+            </div>
+            <div class="gallery-thumbs__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample007.jpg" alt="">
+            </div>
+            <div class="gallery-thumbs__works swiper-slide">
+              <img src="https://into-the-program.com/demo/images/sample008.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-works-detail__items">
+        <div class="page-works-detail__inner inner">
+          <div class="page-works-detail__item">
+            <h3 class="page-works-detail__sub-title sub-title">制作のポイント</h3>
+            <p class="page-works-detail__text text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+          <div class="page-works-detail__item">
+            <h3 class="page-works-detail__sub-title sub-title">デザインのポイント</h3>
+            <p class="page-works-detail__text text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+          <div class="page-works-detail__item">
+            <h3 class="page-works-detail__sub-title sub-title">その他</h3>
+            <p class="page-works-detail__text text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+          <div class="page-works-detail__pagenavi wp-pagenavi top-pagenavi">
+            <a class="wp-pagenavi__first" href="#">PREV</a>
+            <a class="wp-pagenavi__center" href="#">一覧</a>
+            <a class="wp-pagenavi__last" href="#">NEXT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-works-detail__articles">
+        <div class="page-works-detail__articles-inner inner">
+          <div class="page-works-detail__articles-title">おすすめ記事</div>
+          <div class="page-works-detail__cards cards">
+            <a href="#" class="cards__item card">
+              <img src="./images/works_detail/card_01.jpg" alt="タイピングしている様子" class="card__img">
+              <div class="card__body">
+                <h3 class="card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+              <div class="card__info">
+                <span class="card__category">カテゴリ</span>
+                <time class="card__date" datetime="2021-07-20">2021.07.20</time>
+              </div>
+            </a>
+            <a href="#" class="cards__item card">
+              <img src="./images/works_detail/card_02.jpg" alt="PCに映るグラフ" class="card__img">
+              <div class="card__body">
+                <h3 class="card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+                <div class="card__info">
+                  <span class="card__category">カテゴリ</span>
+                  <time class="card__date" datetime="2021-07-20">2021.07.20</time>
+                </div>
+            </a>
+            <a href="#" class="cards__item card">
+              <img src="./images/works_detail/card_03.jpg" alt="サーバールームの中に女性がPCを触っている様子" class="card__img">
+              <div class="card__body">
+                <h3 class="card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+                <div class="card__info">
+                  <span class="card__category">カテゴリ</span>
+                  <time class="card__date" datetime="2021-07-20">2021.07.20</time>
+                </div>
+            </a>
+            <a href="#" class="cards__item card">
+              <img src="./images/works_detail/card_04.jpg" alt="暗闇の中光るPCの画面にGREAT" class="card__img">
+              <div class="card__body">
+                <h3 class="card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </h3>
+                <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+                <div class="card__info">
+                  <span class="card__category">カテゴリ</span>
+                  <time class="card__date" datetime="2021-07-20">2021.07.20</time>
+                </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="contact top-contact" id="contact">
+      <div class="contact__title title inner">
+        <div class="contact__heading">
+          <h2 class="title__main">お問い合わせ</h2>
+          <p class="title__sub title__sub--contact">Contact</p>
+        </div>
+        <p class="contact__text text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <div class="contact__button">
+          <a href="contact.html" class="button">お問い合わせへ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <h1 class="footer__logo">
+        <a href="#" class="footer__logo-link">
+          <img src="./images/common/logo.svg" alt="フッターロゴ" />
+        </a>
+      </h1>
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item md-none">
+            <a href="/index.html"><span>トップ</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="news.html"><span>お知らせ</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="content.html"><span>事業内容</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="works.html"><span>制作実績</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="overview.html"><span>企業概要</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="blog.html"><span>ブログ</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="contact.html"><span>お問い合わせ</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <small class="footer__text">&copy;&nbsp;2021&nbsp;CodeUps&nbsp;Inc.</small>
+  </footer>
+
+  <span class="dli-arrow-up"></span>
+  <div class="page-top-button js-page-top"></div>
+</body>
+
+</html>

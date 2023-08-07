@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.gallery {
+  position: relative;
+  width: 100%;
+  max-width: rem(800);
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery-slider {
+  margin-bottom: rem(5);
+}
+
+.gallery-thumbs__works.swiper-slide, .gallery-slider__works.swiper-slide {
+    opacity: .1;
+    overflow: hidden;
+    text-align: center;
+  }
+
+.gallery-thumbs__works.swiper-slide-active, .gallery-slider__works.swiper-slide-active {
+  opacity: 1;
+}

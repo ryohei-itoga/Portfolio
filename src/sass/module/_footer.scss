@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.footer {
+  padding: rem(51) 0;
+  background-color: $black;
+  @include mq("md") {
+    padding: rem(32) 0;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    margin-right: auto;
+  }
+}
+
+.footer__logo img {
+  width: rem(70);
+}
+
+.footer__inner {
+  text-align: center;
+  @include mq("md") {
+    display: flex;
+    flex-direction: column;
+    flex-direction: initial;
+    align-items: center;
+    padding: 0 rem(30);
+  }
+}
+
+.footer__nav {
+  height: inherit;
+}
+
+.footer__items {
+  height: inherit;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__item {
+  height: inherit;
+}
+
+.footer__item a {
+  display: inline-block;
+  width: 100%;
+  height: inherit;
+  padding: rem(4) 0;
+  color: $white;
+  font-size: rem(16);
+  line-height: 1.4375;
+  letter-spacing: .075em;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 rem(16);
+  }
+}
+
+.footer__item a:hover {
+  opacity: 1;
+}
+
+.footer span {
+  position: relative;
+}
+
+.footer__item span::after {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: rem(-5);
+  left: 0;
+  width: 100%;
+  height: rem(1);
+  background-color: $yellow;
+  content: "";
+}
+
+.footer__item span:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+
+.footer__text {
+  display: block;
+  margin-top: rem(28);
+  color: $white;
+  font-size: rem(11);
+  line-height: 1.454;
+  letter-spacing: .1090em;
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(77);
+    font-size: rem(15);
+    letter-spacing: .08em;
+  }
+}
